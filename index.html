@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryption</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>Cryption</h1>
+
+    <p class="subtitle">
+        Cryptocurrency Monitoring, Prediction & Portfolio Manager
+    </p>
+
+    <div class="search-section">
+
+    <input
+        type="text"
+        id="coinInput"
+        placeholder="Enter coin symbol">
+
+    <button id="searchBtn">
+        Search
+    </button>
+
+    </div>
+
+    <div id="result"></div>
+
+    <canvas id="priceChart"></canvas>
+
+    <h2>Portfolio Manager</h2>
+
+<div class="portfolio-section">
+
+    <input
+        type="text"
+        id="portfolioCoin"
+        placeholder="Coin (BTC, ETH...)">
+
+    <input
+        type="number"
+        id="quantity"
+        placeholder="Quantity">
+
+    <input
+        type="number"
+        id="buyPrice"
+        placeholder="Buy Price">
+
+    <button id="addPortfolioBtn">
+        Add Portfolio
+    </button>
+
+</div>
+
+    <div id="portfolioResult"></div>
+
+    <h2>Chart Annotations</h2>
+
+    <input
+        type="text"
+        id="noteInput"
+        placeholder="Add note">
+
+    <button id="addNoteBtn">
+        Add Note
+    </button>
+
+    <div id="notesContainer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8/hammer.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@2.0.1/dist/chartjs-plugin-zoom.min.js"></script>
+    
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
